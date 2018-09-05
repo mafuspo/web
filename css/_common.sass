@@ -1,0 +1,601 @@
+body
+	padding: 0 0
+	margin-top: 400px
+	background: $color-fondo
+	@media all and (max-width: 768px)
+		position: initial
+		max-width: 100%
+
+.portada1
+	width: 100%
+	height: 400px
+
+.jumbotron
+	background-image:  url("../img/1.jpg")
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 200
+	background-attachment: fixed
+	background-size: cover
+	background-position: center
+	padding: 0
+	margin: 0 0
+	@media all and (max-width: 768px)
+
+		
+.nombre
+	position: absolute
+	background-color: $color-fondo
+	z-index: 300
+	top: 0
+	color: $color-black
+	width: 100%
+	height: 60px
+	display: flex
+	justify-content: center
+	@media all and (max-width: 768px)
+		display: none
+.minombre
+	margin: 9px auto
+	font-size: 3.6rem
+	font-family: "titulo"
+	text-transform: uppercase
+	@media all and (max-width: 768px)
+		display: none
+/*nav*/
+
+.nav2
+	position: fixed
+	top: 0
+	z-index: 100
+	@media all and (max-width: 768px)
+		display: flex
+		flex-direction: column
+.nav
+	background-image: linear-gradient(180deg, $color-fondo, $color-fondo)
+	width: 100%
+	height: 50px
+	list-style: none
+	font-family: "fuente"
+	text-transform: uppercase
+	font-size: 1.2rem
+	.nav-item.nav-link
+		border-radius: initial
+		&:hover
+			background: $color-hover2
+			color: $color-textos
+	a
+		text-decoration: none
+		color: $color-black
+	@media all and (max-width: 768px)
+		display: none
+.nav-responsive
+	display: none
+	@media all and (max-width: 768px)
+		background-color: $color-amarillo
+		position: fixed
+		display: initial
+		width: 100%
+		height: 50px
+		list-style: none
+		font-family: "fuente"
+		text-transform: uppercase
+		font-size: 1.2rem
+		.nav-item.nav-link
+			border-radius: initial
+			&:hover
+				background: $color-hover2
+				color: $color-textos
+		a
+			text-decoration: none
+			color: $color-black
+	.navbar-brand
+		margin: 9px auto
+		font-size: 1.5rem
+		font-family: "titulo"
+		text-transform: uppercase
+	.fondo-nav-responsive
+		max-width: 100%
+		background-color: $color-amarillo
+
+.botoncito
+	border: none
+	background-color: $color-fondo
+	border-radius: none
+	&:focus
+		border: none
+		outline: none
+	@media all and (max-width: 768px)
+		background-color: initial
+/*Sobre mi*/
+.sobre_mi
+	margin-top: 100px
+	display: flex
+	justify-content: center
+	align-items: center
+	.mi_foto
+		background-image: url("../img/mofoto.jpg")
+		background-size: cover
+		width: 200px
+		height: 200px
+		border-radius: 50%
+		position: absolute
+		z-index: 2
+		left: 400px
+		top: 550px
+		@media all and (max-width: 768px)
+			display: none
+		@media all and (max-width: 1024px)
+			position: initial
+			justify-content: center
+	.cuadro_amarillo
+		width: 500px
+		height: 300px
+		background-image: url(../img/roto.jpg)
+		background-size: cover
+		background-position: center 80%
+		position: absolute
+		top: 500px
+		left: 0
+		z-index: 0
+		@media all and (max-width: 768px)
+			display: none
+		@media all and (max-width: 1024px)
+			display: none
+
+	.mi_descripcion
+		margin-left: 50px
+		margin-right: 50px
+		margin-top: 50px
+		width: 600px
+		position: absolute
+		z-index: 2
+		left: 600px
+		top: 500px
+		@media all and (max-width: 768px)
+			position: initial
+		@media all and (max-width: 1024px)
+			position: initial
+			justify-content: center
+.ralla
+	background: $color-amarillo
+	position: absolute
+	left: 670px
+	top: 720px
+	width: 600px
+	@media all and (max-width: 768px)
+		display: none
+	@media all and (max-width: 1024px)
+			display: none
+
+/*Formacion*/
+.formacion_div
+	margin-top: 20rem
+	@media all and (max-width: 768px)
+		margin-top: 1rem
+	@media all and (max-width: 1024px)
+		margin-top: 5rem
+.h2
+	font-family: "fuente"
+	text-transform: uppercase
+	font-size: 1.5rem
+	height: 60px
+	@media all and (max-width: 768px)
+		font-size: .9rem
+.h2_2
+	margin-top: 2rem
+	font-family: "fuente"
+	text-transform: uppercase
+	font-size: 1.5rem
+	height: 60px
+	text-align: center
+	@media all and (max-width: 768px)
+		font-size: 1.2rem
+.titular
+	display: flex
+	justify-content: center
+	padding-top: 3rem
+	font-family: "titulo"
+	font-size: 3rem
+	text-transform: uppercase
+.titular1
+	display: flex
+	justify-content: center
+	padding-top: 3rem
+	font-family: "titulo"
+	font-size: 3rem
+	text-transform: uppercase
+	@media all and (max-width: 768px)
+		font-size: 2.5rem
+.formacion
+	margin-top: 4rem
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	padding: 5rem
+	text-align: center
+	.icono
+		font-size: 3rem
+		text-align: center
+		color: $color-boton-hover
+	.anchura
+		width: 350px
+	.descripcion_formacion
+		font-family: "fuente"
+	@media all and (max-width: 768px)
+		padding: 1rem
+
+/*conocimientos*/
+.lista-conocimientos
+	display: flex
+	justify-content: center
+	padding: 0
+	margin-top: 20px
+	.con-iconos
+		display: flex
+		justify-content: center
+		.conocimientos
+			display: flex
+			list-style: none
+			justify-content: space-around
+			align-items: center
+			padding: 0
+			flex-wrap: wrap
+			@media all and (max-width: 532px)
+				max-width: 350px
+			.ps
+				background-image: url("../img/ps.png")
+				background-size: cover
+				width: 50px
+				height: 50px
+				margin: 0 25px
+			.ai
+				background-image: url("../img/ai.png")
+				background-size: cover
+				width: 50px
+				height: 50px
+				margin: 0 25px
+			.id
+				background-image: url("../img/id.png")
+				background-size: cover
+				width: 50px
+				height: 50px
+				margin: 0 25px
+			.pr
+				background-image: url("../img/pr.png")
+				background-size: cover
+				width: 50px
+				height: 50px
+				margin: 0 25px
+			.programas1
+				font-size: 55px
+				margin: 0 25px
+				color: $color-css
+			.programas2
+				font-size: 55px
+				margin: 0 25px
+				color: $color-boton-hover
+			@media all and (max-width: 768px)
+				.ps
+					width: 40px
+					height: 40px
+				.ai
+					width: 40px
+					height: 40px
+				.id
+					width: 40px
+					height: 40px
+				.pr
+					width: 40px
+					height: 40px
+				.programas1
+					font-size: 49px
+				.programas2
+					font-size: 49px
+
+/*galeria*/
+
+.ilustracion
+	display: flex
+	justify-content: center
+	align-items: center
+	background-image:  url("../img/2.jpg")
+	width: 100%
+	height: 200px
+	margin-bottom: 10rem
+	margin-top: 10rem
+	background-size: cover
+	background-attachment: fixed
+	@media all and (max-width: 768px)
+		margin-top: 3rem
+		margin-bottom: 3rem
+
+a.hover_galeria
+	margin: 0 0
+	padding: 0 0
+	display: block
+	width: 100%
+	height: 100%
+	outline: none
+	&:hover
+		background: rgba(255, 255, 255, .5)
+		transition: .1s
+		outline: none
+
+.imagen_galeria1
+	background-image: url("../img/casco1.jpg")
+	background-position: center center
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_galeria2
+	background-image: url("../img/portrait2.jpg")
+	background-position: center center
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_galeria3
+	background-image: url("../img/swords3.jpg")
+	background-position: center 20%
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_galeria4
+	background-image: url("../img/groot4.jpg")
+	background-position: center center
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_galeria5
+	background-image: url("../img/anillo5.jpg")
+	background-position: center center
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_galeria6
+	background-image: url("../img/pendant6.jpg")
+	background-position: center center
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_galeria7
+	background-image: url("../img/angelina7.jpg")
+	background-position: center center
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_galeria8
+	background-image: url("../img/evelyn8.jpg")
+	background-position: center 20%
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_galeria9
+	background-image: url("../img/winter9.jpg")
+	background-position: center 20%
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+
+
+.modal-mio.show
+	a
+		display: inline !important
+	.modal-content
+		border: none
+		border-radius: none
+	.modal-header
+		padding: 0
+		border: none
+	.modal-body
+		padding: 0
+		border: initial
+		border-radius: none
+
+/*ilustracion*/
+.diseño
+	display: flex
+	justify-content: center
+	align-items: center
+	background-image:  url("../img/3.jpg")
+	background-color: rgba(255, 255, 255, .5)
+	width: 100%
+	height: 200px
+	margin-bottom: 10rem
+	margin-top: 10rem
+	background-size: cover
+	background-attachment: fixed
+	@media all and (max-width: 768px)
+		margin-top: 3rem
+		margin-bottom: 3rem
+
+.imagen_ilustracion1
+	background-image: url("../img/dracula.jpg")
+	background-size: cover
+	background-position: center bottom
+	width: calc(100% / 3)
+	height: 250px
+.imagen_ilustracion2
+	background-image: url("../img/cisnes.jpg")
+	background-position: center center
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_ilustracion3
+	background-image: url("../img/monteverdi.jpg")
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_ilustracion4
+	background-image: url("../img/surf.jpg")
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_ilustracion5
+	background-image: url("../img/disco.jpg")
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+.imagen_ilustracion6
+	background-image: url("../img/gollum.jpg")
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+
+/*web*/
+
+.web
+	display: flex
+	justify-content: center
+	align-items: center
+	background-image:  url("../img/4.jpg")
+	width: 100%
+	height: 200px
+	margin-bottom: 10rem
+	margin-top: 10rem
+	background-size: cover
+	background-attachment: fixed
+	@media all and (max-width: 768px)
+		margin-top: 3rem
+		margin-bottom: 3rem
+.imagen_web
+	background-image: url("../img/web1.jpg")
+	background-position: center center
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+	border: 1rem solid white
+.imagen_web2
+	background-image: url("../img/web2.png")
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+	border: 1rem solid white
+.imagen_web3
+	background-image: url("../img/web3.jpg")
+	background-size: cover
+	width: calc(100% / 3)
+	height: 250px
+	border: 1rem solid white
+
+/*footer*/
+
+.container-fluid
+	padding: 0 0 !important
+	margin: 0 0 !important
+
+.footer
+	background-color: $color-hover2
+	width: 100%
+	height: 250px
+	margin-top: 10rem
+	background-size: cover
+	background-attachment: fixed
+	.estructura
+		display: flex
+		flex-direction: column
+		align-items: center
+@media all and (max-width: 768px)
+	.footer
+		height: 320px
+
+.form-control
+	border: none
+	background-color: $color-hover2
+.formulario
+	width: 100%
+	height: 453px
+	justify-content: center
+	border-radius: none
+	background-image: url(../img/1.jpg)
+	background-size: cover
+	font-family: "fuente"
+
+.form
+	display: flex
+	align-items: center
+	flex-direction: column
+	padding: 40px
+	.casillas_form
+		display: flex
+		flex-direction: row
+		align-items: center
+		.casilla
+			width: 400px
+			@media all and (max-width: 768px)
+				width: 100%
+	@media all and (max-width: 768px)
+		display: flex
+		flex-direction: column
+
+.centrado
+	display: flex
+	justify-content: center
+.btn
+	margin-top: 50px
+	width: 200px
+	height: 50px
+	background: $color-boton-hover
+	border: none
+	font-family: "fuente"
+	&:focus
+		border: none
+		box-shadow: none
+	&:hover
+		background: darken($color-boton-hover, 10%)
+
+.a_centrada
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-left: 30px
+
+.btn.mio
+	width: 200px
+	height: 50px
+	background: $color-boton-hover
+	border: none
+	border-radius: 5px
+	color: white
+	&:focus
+		border: none
+		box-shadow: none
+	&:hover
+		background: darken($color-boton-hover, 10%)
+
+.contacto_asqueroso
+	width: 100%
+	align-items: center
+	.solo_quiero_flex
+		display: flex
+		justify-content: space-around
+		max-width: 520px
+		align-items: center
+		margin: 0 auto
+		margin-top: 30px
+		@media all and (max-width: 768px)
+			display: flex
+			flex-direction: column
+	.redes
+		list-style: none
+		display: flex
+		justify-content: space-around
+		max-width: 300px
+		align-items: center
+		margin: 0 auto
+		@media all and (max-width: 768px)
+			
+a.a_icono
+	.icono_grande
+		color: $color-amarillo
+		font-size: 40px
+		&:hover
+			color: darken($color-amarillo, 10%)
+	@media all and (max-width: 768px)
+		font-size: 20px
+
+.texto_contacto
+	font-family: "fuente"
+	font-size: 1.1rem
